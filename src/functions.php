@@ -12,12 +12,12 @@ function responder(ResolverInterface $resolver, RenderInterface $render)
 	return new Responder($resolver, $render);
 }
 
-function view(ExecuteInterface $responder)
+function display(ExecuteInterface $responder, DomainInterface $domain)
 {
-	return $responder->execute();
+	return $responder->provide($domain)->execute();
 }
 
-function name($name, ResolverInterface $resolver = null)
+function view($name, ResolverInterface $resolver = null)
 {
 	return resolver($resolver)->view($name);
 }
@@ -32,12 +32,17 @@ function renderer(RenderInterface $render = null)
 	return $render ?: new Render\File;
 }
 
+function domainFromArray(array $data)
+{
+	return new Domain\FromArray($data);
+}
+
 function fixPathSeparators($path)
 {
 	return str_replace(array('\\', '/'), DIRECTORY_SEPARATOR, $path);
 }
 
-function example()
+function example(array $data)
 {
-	return view(responder(name('test'), renderer()));
+	return display(responder(view('test'), renderer()), domainFromArray($data));
 }
