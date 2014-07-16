@@ -6,6 +6,8 @@
 
 namespace EvolveCMS\Responder\WP;
 
+use Exception;
+
 /**
  * Class Responder
  *
@@ -27,6 +29,11 @@ class Responder implements ExecuteInterface, ProvideInterface
 	 * @var \EvolveCMS\Responder\WP\RenderInterface
 	 */
 	protected $_render;
+
+	/**
+	 * @var \EvolveCMS\Responder\WP\DomainInterface
+	 */
+	protected $_domain;
 
 	/**
 	 * @param ResolverInterface $resolver
@@ -57,11 +64,22 @@ class Responder implements ExecuteInterface, ProvideInterface
 			$this->_render = $interface;
 		}
 
+		if ($interface instanceof DomainInterface) {
+			$this->_domain = $interface;
+		}
+
 		return $this;
 	}
 
 	public function execute()
 	{
+		if (!$this->_render || $this->_resolver || $this->_domain) {
+			throw new Exception('Interfaces are required.');
+		}
 
+		return $this->_render->render(
+			$this->_resolver->resolve(),
+			$this->_domain->toArray()
+		);
 	}
 } 
