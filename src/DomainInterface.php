@@ -15,7 +15,7 @@ interface DomainInterface
 {
 
 	/**
-	 * Retrieve data for responder.
+	 * Access data for responder.
 	 *
 	 * @return array
 	 */
