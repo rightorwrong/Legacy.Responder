@@ -1,8 +1,11 @@
 {
 	"name": "EvolveCMS/Legacy.Responder",
 	"description": "Legacy WordPress Views Refactored from the source.",
-	"minimum-stability": "stable",
+	"minimum-stability": "dev",
 	"license": "GPLv2",
+	"require-dev": {
+		"codeclimate/php-test-reporter": "dev-master"
+	},
 	"autoload": {
 		"psr-4": {
 			"EvolveCMS\\Responder\WP": "src/"
