@@ -14,7 +14,10 @@
 			"EvolveCMS\\Responder\WP": "src/"
 		},
 		"files": [
-			"src/functions.php"
+			"src/functions.php",
+			"src/Domain/functions.php",
+			"src/Render/functions.php",
+			"src/Resolver/functions.php"
 		]
 	},
 	"respositories": [
