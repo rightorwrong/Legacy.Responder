@@ -6,8 +6,6 @@
 
 namespace EvolveCMS\Responder\WP\Resolver;
 
-use EvolveCMS\Responder\WP\ResolverInterface;
-
 use Exception;
 
 

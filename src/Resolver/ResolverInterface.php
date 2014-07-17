@@ -4,7 +4,7 @@
  * @package EvolveCMS\Responder\WP
  */
 
-namespace EvolveCMS\Responder\WP;
+namespace EvolveCMS\Responder\WP\Resolver;
 
 /**
  * Interface ResolverInterface

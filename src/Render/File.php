@@ -6,8 +6,6 @@
 
 namespace EvolveCMS\Responder\WP\Render;
 
-use EvolveCMS\Responder\WP\RenderInterface;
-
 use Exception;
 
 class File implements RenderInterface

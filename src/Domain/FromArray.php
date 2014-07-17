@@ -6,8 +6,6 @@
 
 namespace EvolveCMS\Responder\WP\Domain;
 
-use EvolveCMS\Responder\WP\DomainInterface;
-
 
 class FromArray implements DomainInterface
 {
