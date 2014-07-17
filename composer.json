@@ -3,9 +3,6 @@
 	"description": "Legacy WordPress Views Refactored from the source.",
 	"minimum-stability": "dev",
 	"license": "GPLv2",
-	"require": {
-		"EvolveCMS-Project/Support": "dev-master"
-	},
 	"require-dev": {
 		"codeclimate/php-test-reporter": "dev-master"
 	},
