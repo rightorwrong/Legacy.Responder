@@ -11,7 +11,7 @@
 	},
 	"autoload": {
 		"psr-4": {
-			"EvolveCMS\\Responder\WP": "src/"
+			"EvolveCMS\\Responder\\WP\\": "src/"
 		},
 		"files": [
 			"src/functions.php",
