@@ -1,7 +1,12 @@
 <?php
 /**
- * Created by PhpStorm.
- * User: Jacob Santos
- * Date: 7/16/14
- * Time: 8:23 PM
- */ 
+ * @license MIT
+ * @package EvolveCMS\Responder\WP\Render
+ */
+
+namespace EvolveCMS\Responder\WP\Render;
+
+function renderer(RenderInterface $render = null)
+{
+	return $render ?: new File;
+}
