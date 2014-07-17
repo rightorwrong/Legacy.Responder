@@ -1,7 +1,7 @@
 <?php
 /**
  * @license MIT
- * @package EvolveCMS\Responder\WP
+ * @package EvolveCMS\Responder\WP\Resolver
  */
 
 namespace EvolveCMS\Responder\WP\Resolver;

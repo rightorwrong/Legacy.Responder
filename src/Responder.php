@@ -6,6 +6,10 @@
 
 namespace EvolveCMS\Responder\WP;
 
+use EvolveCMS\Responder\WP\Resolver\ResolverInterface;
+use EvolveCMS\Responder\WP\Render\RenderInterface;
+use EvolveCMS\Responder\WP\Domain\DomainInterface;
+
 use Exception;
 
 /**

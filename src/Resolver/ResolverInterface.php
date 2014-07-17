@@ -1,7 +1,7 @@
 <?php
 /**
  * @license MIT
- * @package EvolveCMS\Responder\WP
+ * @package EvolveCMS\Responder\WP\Resolver
  */
 
 namespace EvolveCMS\Responder\WP\Resolver;
@@ -11,7 +11,7 @@ namespace EvolveCMS\Responder\WP\Resolver;
  *
  * Interacts with the responder to return the path of the view.
  *
- * @package EvolveCMS\Responder\WP
+ * @package EvolveCMS\Responder\WP\Resolver
  */
 interface ResolverInterface
 {
